@@ -1,0 +1,30 @@
+.theme-speech {
+    margin-top: 5em;
+}
+.theme-speech > h1 {
+    font-weight: bold;
+}
+
+
+.theme-presentation {
+    margin-top: 6em;
+}
+
+@media (max-width: 900px) {
+    .home-container {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .theme-presentation {
+        flex-direction: column !important;
+    }
+
+    .theme-phone {
+        margin-top: 40px;
+    }
+
+    .theme-speech {
+        margin-top: 0em;
+    }
+}

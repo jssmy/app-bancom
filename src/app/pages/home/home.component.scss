@@ -1,0 +1,20 @@
+.home-body {
+    /* Background pattern from Toptal Subtle Patterns */
+    height: 100vh;
+    width: 100%;
+    background-image:
+        url("./../../../assets/images/fullscreen.jpg");
+    background-repeat: repeat, repeat;
+    background-position: right, left;
+}
+
+.home-container {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+
+app-theme-presentation, app-theme-features{
+    height: 100vh;
+    width: 100%;
+}

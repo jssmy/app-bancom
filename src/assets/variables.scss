@@ -1,0 +1,26 @@
+$primary: #7C3AED;
+$secondary: #EDE9FE;
+
+.color-primary {
+    color: $primary !important
+}
+
+.color-secondary {
+    color: $secondary !important
+}
+
+.background-primary {
+    background: $primary !important;
+    color: white !important;
+}
+
+
+.background-secondary {
+    background: $secondary !important;
+    color: $primary !important;
+}
+
+.background-transparent {
+  background: transparent !important;
+}
+
