@@ -4,8 +4,8 @@
 @import './assets/variables.scss';
 @import './assets/plugins/bootstrap/css/bootstrap.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; padding: 0px; margin: 0px;}
+
 
 button {
     height: 48px !important;
@@ -23,4 +23,85 @@ button {
 
 .justify-content-center {
     justify-content: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+
+.align-items-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mt-96 {
+    margin-top: 96px;
+}
+
+.mb-96 {
+    margin-bottom: 96px;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+  
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.col-md-4, .col-xs-6, .col-md-8, .col-md-6{
+    padding: 0px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+@media (max-width: 900px) {
+    .stadistic-items {
+        margin-top: 40px;
+    }
+
+    .font-inter-bold-48 {
+        font-size: 36px !important;
+    }
+
+    .font-inter-Medium-Bold-36 {
+        font-size: 30px !important;
+    }
+
+    .font-inter-extrabold-60 {
+        font-size: 48px !important;
+        line-height: 60px !important;
+    }
+
+    .font-inter-semibold-30 {
+        font-size: 24px !important; 
+        
+    }
 }

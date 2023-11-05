@@ -40,10 +40,21 @@
     src: url('./Inter/Inter-SemiBold.ttf');
 }
 
+.font-inter-regular-16 {
+    font-family: 'Inter-Regular' !important;
+    font-size: 14px !important;
+}
+
+.font-inter-regular-18 {
+    font-family: 'Inter-Regular' !important;
+    font-size: 18px !important;
+}
+
 .font-inter-semibold-14 {
     font-family: 'Inter-SemiBold';
     font-size: 14px;
 }
+
 
 
 .font-inter-semibold-16 {
@@ -51,6 +62,18 @@
     font-size: 16px;
 }
 
+
+.font-inter-semibold-30 {
+    font-family: 'Inter-SemiBold' !important;
+    font-size: 30px !important;
+}
+
+
+.font-inter-bold-48 {
+    font-family: 'Inter-Bold' !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+}
 
 .font-inter-extrabold-20 {
     font-family: 'Inter-ExtraBold';
@@ -74,12 +97,34 @@
 }
 
 .font-inter-extrabold-60 {
-    font-family: 'Inter-ExtraBold';
+    font-family: 'Inter-ExtraBold' !important;
     font-size: 60px !important;
-    line-height: 60px !important;
+    line-height: 72px !important;
 }
 
 .font-inter-Light-18 {
     font-family: 'Inter-Light';
     font-size: 18px;
+    line-height: 28px;
 }
+
+.font-inter-Light-48 {
+    font-family: 'Inter-Light' !important;
+    font-size: 48px !important;
+    line-height: 28px !important;
+}
+
+.font-inter-Light-16 {
+    font-family: 'Inter-Light' !important;
+    font-size: 16px !important;
+    line-height: 26px !important;
+}
+
+
+.font-inter-Medium-Bold-36 {
+    font-family: 'Inter-Medium' !important;
+    font-size: 36px !important;
+    line-height: 18px !important;
+    font-weight: bold !important;
+}
+
