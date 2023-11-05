@@ -99,7 +99,21 @@ button {
     width: 100%;
 }
 
+.mr-10 {
+    margin-right: 10px;
+}
 
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
 @media (max-width: 900px) {
     .stadistic-items {
         margin-top: 40px;
@@ -137,3 +151,7 @@ button {
         margin-right: 2em;
     }
 }
+
+.mat-mdc-form-field-subscript-wrapper {
+    display: none;
+  }
