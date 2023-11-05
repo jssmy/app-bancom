@@ -6,6 +6,7 @@ import { MatButtonModule } from "@angular/material/button"
 import { NavbarComponent } from 'src/app/commons/components/navbar/navbar.component';
 import { ThemePresentationComponent } from './commons/components/theme-presentation/theme-presentation.component';
 import { ThemeFeaturesComponent } from './commons/components/theme-features/theme-features.component';
+import { FooterComponent } from 'src/app/commons/components/footer/footer.component';
 
 
 @Component({
@@ -16,7 +17,8 @@ import { ThemeFeaturesComponent } from './commons/components/theme-features/them
   imports: [
     NavbarComponent,
     ThemePresentationComponent,
-    ThemeFeaturesComponent
+    ThemeFeaturesComponent,
+    FooterComponent
   ]
 })
 export class HomeComponent {
