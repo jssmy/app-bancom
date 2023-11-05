@@ -63,7 +63,7 @@ export class LoginComponent implements OnInit {
   }
 
   private successLogin() {
-    this.router.navigate([GlobalPaths.POST]);
+    this.router.navigate([GlobalPaths.DASHBOARD,GlobalPaths.USERS]);
   }
 
 }

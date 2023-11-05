@@ -1,13 +1,13 @@
 import { RouterModule, Routes } from '@angular/router';
 import { GlobalPaths } from 'src/app/commons/constants/global-paths';
-import { ListPostComponent } from './list-post/list-post.component';
+import { ListUserComponent } from './list-user/list-user.component';
 
 const routes: Routes = [
     {
         path: GlobalPaths.MAIN,
-        component: ListPostComponent
+        component: ListUserComponent
     },
 ];
 
 
-export const POST_ROUTES = RouterModule.forChild(routes);
+export const USER_ROUTES = RouterModule.forChild(routes);
