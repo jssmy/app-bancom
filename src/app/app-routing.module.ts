@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GlobalPaths } from './commons/constants/global-paths';
 import { authGuard } from './commons/guards/auth.guard';
 import { loginGuard } from './commons/guards/login.guard';
+import { LayoutComponent } from './commons/components/layout/layout.component';
 
 const routes: Routes = [
   {
@@ -17,11 +18,17 @@ const routes: Routes = [
     loadComponent: () => import('./pages/login/login.component').then(component => component.LoginComponent)
   },
   {
-    path: GlobalPaths.POST,
+    path: GlobalPaths.DASHBOARD,
+    component: LayoutComponent,
     canActivate: [
       authGuard
     ],
-    loadChildren: () => import('./pages/post/post.module').then(module => module.PostModule)
+     children: [
+      {
+        path: GlobalPaths.USERS,
+        loadChildren: () => import('./pages/user/user.module').then(module => module.UserModule)
+      }
+     ]
   }
 ];
 

@@ -18,7 +18,7 @@ export const loginGuard = () => {
     const timeExpired = DateUtil.toMoment(expiredIn);
     const isInTime = timeExpired.diff(DateUtil.getCurrent(), 'seconds') > 0;
     if (isInTime) {
-        return router.navigate([`/${GlobalPaths.POST}`]);
+        return router.navigate([`/${GlobalPaths.DASHBOARD}`, GlobalPaths.USERS]);
     }
 
     return true;
