@@ -11,20 +11,16 @@
 }
 
 @media (max-width: 900px) {
-    .home-container {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-
-    .theme-presentation {
-        flex-direction: column !important;
-    }
-
     .theme-phone {
-        margin-top: 40px;
+      margin-top: 30px;
     }
+
 
     .theme-speech {
         margin-top: 0em;
+    }
+
+    .theme-presentation {
+        flex-direction: column;
     }
 }

@@ -9,12 +9,21 @@
 }
 
 .home-container {
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 
+
+@media (max-width: 900px) {
+    .home-container {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
 app-theme-presentation, app-theme-features{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    display: flex;
 }
