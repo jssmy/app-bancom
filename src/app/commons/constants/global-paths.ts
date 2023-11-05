@@ -1,3 +1,5 @@
 export enum GlobalPaths {
-    MAIN = ''
+    MAIN = '',
+    LOGIN = 'login',
+    POST = 'post'
 }
