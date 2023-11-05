@@ -1,3 +1,19 @@
+.theme-background {
+    /* Background pattern from Toptal Subtle Patterns */
+    height: 100vh;
+    width: 100%;
+    background-image:
+        url("./../../../../../../assets/images/fullscreen.jpg");
+    background-repeat: repeat, repeat;
+    background-position: right, left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
 .theme-speech {
     margin-top: 5em;
 }
