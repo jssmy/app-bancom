@@ -1,0 +1,41 @@
+<div class="users-container">
+    <mat-nav-list>
+        <mat-list-item >
+            <tr class="tr-table">
+                <td class="name">Nombre</td>
+                <td class="username">Username</td>
+                <td class="address">Dirección</td>
+                <td class="email">Correo</td>
+                <td class="phone">Phone</td>
+                <td class="Post">Post</td>
+
+            </tr>
+         </mat-list-item>
+        
+          <mat-expansion-panel *ngFor="let user of dataSource">
+            <mat-expansion-panel-header (click)="onExpand(user.id)">
+              <mat-panel-title>
+                <tr class="tr-table">
+                    <td class="name font-inter-regular-14">{{user.name}}</td>
+                    <td class="username font-inter-regular-14">{{user.username}}</td>
+                    <td class="address font-inter-regular-14">{{user.address.street}}, {{user.address.suite}}, {{user.address.city}}</td>
+                    <td class="email font-inter-regular-14">{{user.email}}</td>
+                    <td class="phone font-inter-regular-14">{{user.phone}}</td>
+                    <td class="Post font-inter-regular-14"></td>
+                </tr>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="post-container flex-row">
+               <div>
+                <div class="post-item" *ngFor="let post of user.posts">
+                    <h1 class="font-inter-bold-20">Título: {{post.title}}</h1>
+                    <p>Descripción: {{post.body}}</p>
+                </div>
+               </div>
+                <div class="post-option">
+                    <button mat-flat-button (click)="onAddPost(user.id)" class="font-inter-semibold-16 background-primary" >Crear post</button>
+                </div>
+            </div>
+          </mat-expansion-panel>
+      </mat-nav-list>
+</div>

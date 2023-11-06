@@ -1,0 +1,40 @@
+$primary: #7C3AED;
+$secondary: #EDE9FE;
+$darkblue: #2D3748;
+$danger: rgb(213, 28, 28);
+.color-primary {
+    color: $primary !important
+}
+
+.color-danger {
+    color: $danger !important;
+}
+
+.color-secondary {
+    color: $secondary !important
+}
+
+.background-primary {
+    background: $primary !important;
+    color: white !important;
+}
+
+.background-darkblue {
+    background: $darkblue !important;
+    color: white !important;
+}
+
+.color-white {
+    color: white;
+}
+
+
+.background-secondary {
+    background: $secondary !important;
+    color: $primary !important;
+}
+
+.background-transparent {
+  background: transparent !important;
+}
+

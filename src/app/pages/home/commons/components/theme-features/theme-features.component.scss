@@ -1,0 +1,16 @@
+.feature-item {
+    margin-top: 64px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+
+@media (max-width: 900px) {
+    .mt-96 {
+        margin-top: 80px !important;
+    }
+
+    .mb-96 {
+        margin-bottom: 80px !important;
+    }
+}
