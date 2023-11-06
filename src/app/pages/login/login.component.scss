@@ -23,6 +23,12 @@
     height: 100vh;
 }
 
+.background__form {
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+}
+
 @media (max-width: 900px) {
    .login-inputs, .login-title {
     width: 200px;
