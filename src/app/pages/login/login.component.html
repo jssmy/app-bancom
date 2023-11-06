@@ -1,0 +1,51 @@
+<div class="login">
+    <div class="col-md-6">
+        <img src="assets/images/login/login-background.jpg">
+    </div>
+    <div class="col-md-6 flex-column align-items-center">
+        <div class="login-title">
+            <div class="row">
+                <span class="font-inter-Light-16">Bienvenido</span>
+                <h1 class="font-inter-semibold-30 font-weigth-700">Iniciar sesión</h1>
+            </div>
+        </div>
+       <form [formGroup]="presenter.form">
+        <div class="login-inputs">
+            <div class="row mb-20 w-100">
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Email" type="email" formControlName="email" required>
+                </mat-form-field>
+                <mat-error *ngIf="presenter.email.touched && presenter.getError('email')">
+                    {{presenter.getError('email')}}
+                </mat-error>
+            </div>
+            <div class="row w-100 mb-20">
+                <mat-form-field class="w-100">
+                    <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'"
+                        formControlName="password" required>
+                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="presenter.password.touched && presenter.getError('password')">
+                    {{presenter.getError('password')}}
+                </mat-error>
+                <label class="w-100 align-items-end flex-column">¿Olvidaste tu contraseña?</label>
+                
+            </div>
+            <div class="row">
+                <label class="font-inter-regular-14">
+                    <mat-checkbox></mat-checkbox> Recorda correo
+                </label>
+            </div>
+            <div class="row mt-60">
+                <button  mat-flat-button [disabled]="presenter.form.invalid" (click)="onLogin()" class="font-inter-semibold-16 background-primary w-100 mb-15" >Iniciar sesión</button>
+                <button mat-flat-button   class="font-inter-semibold-16 background-darkblue w-100">
+                   <div class="flex-row">
+                    <img class="mr-10" src="assets/images/icons/google.svg">
+                    Regístrate
+                   </div>
+                </button>
+            </div>
+        </div>
+       </form>
+    </div>
+</div>

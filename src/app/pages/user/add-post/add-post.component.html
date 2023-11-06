@@ -1,0 +1,19 @@
+<div class="modal-conent mt-60 ml-20 mr-20">
+    <h1 class="modal-title">Crear post</h1>
+    <form [formGroup]="form">
+        <div class=" mb-20 w-100">
+            <mat-form-field class="w-100">
+                <input matInput placeholder="Títutlo" type="email" formControlName="title" required>
+            </mat-form-field>
+            
+        </div>
+        <div class=" mb-20 w-100 mb-20">
+            <mat-form-field class="w-100">
+                <input matInput placeholder="Descripción" type="email" formControlName="description" required>
+            </mat-form-field>
+        </div>
+        <div class="flex-column justify-content-center">
+            <button (click)="savePost()"  mat-flat-button class="font-inter-semibold-16 background-primary" >Guardar</button>
+        </div>
+    </form>
+</div>

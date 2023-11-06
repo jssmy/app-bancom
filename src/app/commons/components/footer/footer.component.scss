@@ -1,0 +1,25 @@
+.footer {
+    background: black;
+    .container > div > div > span{
+        margin-right: 24px;
+    }
+
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+
+.store {
+    width: 135px;
+    height: 40px;
+}
+
+
+@media (max-width: 900px) {
+    .contact-information {
+        display: none;
+    }
+}

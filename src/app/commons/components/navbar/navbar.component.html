@@ -1,0 +1,46 @@
+<mat-toolbar>
+    <div class="side-nav-primary-options">
+        <img class="logo" src="assets/images/logo.svg">
+        <span id="menuTitle" class="font-inter-extrabold-20">
+            Landify
+        </span>
+        <a mat-button  class="top-menu-item font-inter-semibold-14">Feature</a>
+        <a mat-button  class="top-menu-item font-inter-semibold-14">Pricing</a>
+        <a mat-button  class="top-menu-item font-inter-semibold-14">Careers</a>
+        <a mat-button  class="top-menu-item font-inter-semibold-14">Ayuda</a>
+    </div>
+    <div class="side-nav-buttons">
+        <button mat-flat-button routerLink="/login" class="font-inter-semibold-16 background-primary" >Iniciar sesión</button>
+        <button mat-flat-button class="font-inter-semibold-16 background-secondary">Regístrate</button>
+           <button mat-icon-button id="menuIcon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <!-- <button mat-icon-button (click)="sidenav.toggle()" id="menuIcon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button> -->
+    </div>
+</mat-toolbar>
+
+<!-- <mat-sidenav-container>
+    <mat-sidenav #sidenav [fixedInViewport]="true" [fixedTopGap]="60" mode="side">
+        <div class="side-nav-items">
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/"
+                    class="side-menu-item"><mat-icon>home</mat-icon>Home</a>
+            </div>
+
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/contacts"
+                    class="side-menu-item"><mat-icon>people</mat-icon>Contacts</a>
+            </div>
+
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/newcontact"
+                    class="side-menu-item"><mat-icon>person_add</mat-icon>New
+                    Contact</a>
+            </div>
+        </div>
+        
+    </mat-sidenav>
+
+</mat-sidenav-container> -->
