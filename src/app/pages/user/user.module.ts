@@ -6,11 +6,17 @@ import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+
+import { AddPostComponent } from './add-post/add-post.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    ListUserComponent
+    ListUserComponent,
+    AddPostComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +24,11 @@ import { MatButtonModule } from '@angular/material/button';
     MatTableModule,
     MatExpansionModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
   ]
 })
 export class UserModule { }

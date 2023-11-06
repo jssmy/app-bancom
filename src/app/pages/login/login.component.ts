@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -8,7 +8,6 @@ import { LoginPresenter } from './login.presenter';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AuthService } from './commons/services/auth.service';
-import { error } from 'console';
 import { Router } from '@angular/router';
 import { GlobalPaths } from 'src/app/commons/constants/global-paths';
 @Component({
@@ -33,7 +32,7 @@ import { GlobalPaths } from 'src/app/commons/constants/global-paths';
     LoginPresenter
   ]
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   constructor(
     public readonly presenter: LoginPresenter,
@@ -41,9 +40,6 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) { }
   hide: boolean = true;
-
-  ngOnInit(): void {
-  }
 
   onLogin() {
     this.authService.login(
