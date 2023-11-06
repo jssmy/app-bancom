@@ -34,11 +34,8 @@ export class AddPostComponent implements OnInit {
       userId: this.data.userId
     };
 
-    console.log(request);
-
     this.postService.createPost(request)
     .subscribe(() => this.close());
-
 
   }
 

@@ -13,7 +13,7 @@
             </mat-form-field>
         </div>
         <div class="flex-column justify-content-center">
-            <button (click)="savePost()"  mat-flat-button class="font-inter-semibold-16 background-primary" >Guardar</button>
+            <button id="button-save"  [disabled]="form.invalid" (click)="savePost()"  mat-flat-button class="font-inter-semibold-16 background-primary" >Guardar</button>
         </div>
     </form>
 </div>

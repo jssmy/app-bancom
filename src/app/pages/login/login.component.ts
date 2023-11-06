@@ -37,7 +37,7 @@ export class LoginComponent {
   constructor(
     public readonly presenter: LoginPresenter,
     private readonly authService: AuthService,
-    private router: Router
+    public router: Router
   ) { }
   hide: boolean = true;
 
@@ -51,14 +51,14 @@ export class LoginComponent {
     });
   }
 
-  private errorLogin(status: number) {
+  errorLogin(status: number) {
     if (404) {
       this.presenter.email.setErrors({ incorrect: true });
       this.presenter.password.setErrors({ incorrect: true });
     }
   }
 
-  private successLogin() {
+  successLogin() {
     this.router.navigate([GlobalPaths.DASHBOARD,GlobalPaths.USERS]);
   }
 

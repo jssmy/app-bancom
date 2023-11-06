@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ThemePresentationComponent } from './theme-presentation.component';
+import { Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ThemePresentationComponent', () => {
   let component: ThemePresentationComponent;
@@ -8,7 +9,13 @@ describe('ThemePresentationComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ThemePresentationComponent]
+      declarations: [],
+      imports: [
+        RouterTestingModule
+      ],
+      providers: [
+        Router
+      ]
     });
     fixture = TestBed.createComponent(ThemePresentationComponent);
     component = fixture.componentInstance;
