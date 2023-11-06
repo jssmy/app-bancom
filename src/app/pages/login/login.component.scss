@@ -28,3 +28,12 @@
     width: 200px;
    }
 }
+
+@media (max-width: 375px) {
+    .background {
+        display: none;
+    }
+    .login-form {
+        width: 100% !important;
+    }
+ }
