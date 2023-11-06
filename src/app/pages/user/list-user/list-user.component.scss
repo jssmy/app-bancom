@@ -1,5 +1,6 @@
-.users-container { 
+.users-container {
     min-height: 100vh;
+    background: white !important;
 }
 
 mat-list-item {
@@ -8,7 +9,7 @@ mat-list-item {
 
 .tr-table {
     width: 100%;
-    
+
     .name {
         width: 200px;
     }
