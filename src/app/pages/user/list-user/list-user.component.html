@@ -33,7 +33,7 @@
                 </div>
                </div>
                 <div class="post-option">
-                    <button mat-flat-button routerLink="/login" class="font-inter-semibold-16 background-primary" >Crear post</button>
+                    <button mat-flat-button (click)="onAddPost(user.id)" class="font-inter-semibold-16 background-primary" >Crear post</button>
                 </div>
             </div>
           </mat-expansion-panel>
