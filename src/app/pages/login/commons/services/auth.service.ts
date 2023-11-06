@@ -41,11 +41,6 @@ export class AuthService {
       );
   }
 
-  user(): User {
-    const token: TokenAuth = JSON.parse(sessionStorage.getItem('auth-user'));
-    return token.user;
-  }
-
   token(): TokenAuth {
     const token: TokenAuth = JSON.parse(sessionStorage.getItem('auth-user'));
     return token;

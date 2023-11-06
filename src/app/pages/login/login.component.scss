@@ -17,3 +17,14 @@
 .hint {
     display: none;
 }
+
+.background {
+    background: url(/assets/images/login/login-background.jpg);
+    height: 100vh;
+}
+
+@media (max-width: 900px) {
+   .login-inputs, .login-title {
+    width: 200px;
+   }
+}

@@ -5,6 +5,7 @@ import { PostService } from '../commons/services/post.service';
 import { MatDialog } from '@angular/material/dialog';
 import { AddPostComponent } from '../add-post/add-post.component';
 
+
 @Component({
   selector: 'app-list-user',
   templateUrl: './list-user.component.html',

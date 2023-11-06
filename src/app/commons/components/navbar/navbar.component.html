@@ -10,19 +10,16 @@
         <a mat-button  class="top-menu-item font-inter-semibold-14">Ayuda</a>
     </div>
     <div class="side-nav-buttons">
-        <button mat-flat-button routerLink="/login" class="font-inter-semibold-16 background-primary" >Iniciar sesión</button>
+        <button id="button-login" mat-flat-button routerLink="/login" class="font-inter-semibold-16 background-primary" >Iniciar sesión</button>
         <button mat-flat-button class="font-inter-semibold-16 background-secondary">Regístrate</button>
-           <button mat-icon-button id="menuIcon" aria-label="Example icon-button with menu icon">
+           <button mat-icon-button (click)="sidenav.toggle()" id="menuIcon" aria-label="Example icon-button with menu icon">
             <mat-icon>menu</mat-icon>
         </button>
-        <!-- <button mat-icon-button (click)="sidenav.toggle()" id="menuIcon" aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-        </button> -->
     </div>
 </mat-toolbar>
 
-<!-- <mat-sidenav-container>
-    <mat-sidenav #sidenav [fixedInViewport]="true" [fixedTopGap]="60" mode="side">
+<mat-sidenav-container >
+    <mat-sidenav #sidenav [fixedInViewport]="true" [fixedTopGap]="60" mode="side" position="end">
         <div class="side-nav-items">
             <div>
                 <a (click)="sidenav.close()" mat-button routerLink="/"
@@ -43,4 +40,4 @@
         
     </mat-sidenav>
 
-</mat-sidenav-container> -->
+</mat-sidenav-container>
