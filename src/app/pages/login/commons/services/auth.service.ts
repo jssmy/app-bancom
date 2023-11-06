@@ -3,7 +3,8 @@ import { Observable, of, switchMap, tap, throwError, timer } from 'rxjs';
 import { TokenAuth } from 'src/app/commons/models/token-auth';
 import { User } from 'src/app/commons/models/user';
 import { DateUtil } from 'src/app/utils/date';
-const usersMock: User[] = require('./../dummy/users.mock.json');
+import { USER_DUMMY } from '../constants/user-dummy';
+const usersMock: User[] = USER_DUMMY;
 @Injectable({
   providedIn: 'root'
 })
