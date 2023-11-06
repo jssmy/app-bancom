@@ -7,12 +7,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-
+  get url() {
+    return 'https://jsonplaceholder.typicode.com/users'
+  }
   constructor(
     private readonly http: HttpClient
   ) { }
 
   getUsers(): Observable<UserPost[]> {
-    return this.http.get<UserPost[]>('https://jsonplaceholder.typicode.com/users');
+    return this.http.get<UserPost[]>(this.url);
   }
 }

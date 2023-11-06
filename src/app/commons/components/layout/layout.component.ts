@@ -15,11 +15,5 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ]
 })
-export class LayoutComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class LayoutComponent {
 }
